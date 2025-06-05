@@ -2,7 +2,7 @@ pipeline {
   agent any
   environment {
      NAME = "Jenkins"
-     MACHINE = """ $({
+     MACHINE = """$({
                sh(
                returnStdout: true,
                script: 'uname -n'
